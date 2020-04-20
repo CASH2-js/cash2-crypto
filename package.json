@@ -1,7 +1,7 @@
 {
-  "name": "turtlecoin-crypto",
+  "name": "cash2-crypto",
   "version": "4.0.6",
-  "description": "Node C++ Addon for TurtleCoin Cryptographic Functions",
+  "description": "Node C++ Addon for CASH2 Cryptographic Functions",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "scripts": {
@@ -20,17 +20,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/turtlecoin/turtlecoin-crypto.git"
+    "url": "git+https://github.com/CASH2-js/cash2-crypto.git"
   },
   "bugs": {
-    "url": "https://github.com/turtlecoin/turtlecoin-crypto/issues"
+    "url": "https://github.com/CASH2-js/cash2-crypto/issues"
   },
   "engines": {
     "node": ">=6"
   },
   "engineStrict": true,
-  "homepage": "https://github.com/turtlecoin/turtlecoin-crypto#readme",
-  "author": "The TurtleCoin Developers",
+  "homepage": "https://github.com/CASH2-js/cash2-crypto#readme",
+  "author": "The TurtleCoin Developers / wkibbler",
   "license": "GPL-3.0",
   "dependencies": {
     "bindings": "^1.5.0",
