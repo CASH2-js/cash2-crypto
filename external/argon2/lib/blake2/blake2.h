@@ -20,9 +20,6 @@ typedef struct __blake2b_state {
 } blake2b_state;
 
 /* Streaming API */
-void blake2b_init(blake2b_state *S, size_t outlen);
-void blake2b_update(blake2b_state *S, const void *in, size_t inlen);
-void blake2b_final(blake2b_state *S, void *out, size_t outlen);
 
 void blake2b_long(void *out, size_t outlen, const void *in, size_t inlen);
 

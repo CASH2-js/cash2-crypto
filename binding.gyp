@@ -16,6 +16,7 @@
       ],
       "sources": [
         "src/aesb.c",
+        "src/blake2b-ref.c",
         "src/blake256.c",
         "src/chacha8.cpp",
         "src/crypto.cpp",
