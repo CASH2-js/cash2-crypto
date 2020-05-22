@@ -23,7 +23,7 @@ var Types;
  * @ignore
  */
 const moduleVars = {
-    crypto: null,
+    crypto: require('./turtlecoin-crypto')(),
     type: Types.UNKNOWN,
 };
 /**
