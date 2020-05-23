@@ -1,0 +1,1 @@
+/root/cash2-crypto/emsdk/fastcomp/emscripten/emar rc libturtlecoin-crypto-static.a  @CMakeFiles/turtlecoin-crypto-static.dir/objects1.rsp

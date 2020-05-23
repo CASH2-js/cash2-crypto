@@ -1,0 +1,16 @@
+The target system is: Emscripten - 1 - x86
+The host system is: Linux - 4.4.0-174-generic - x86_64
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /root/cash2-crypto/jsbuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_72efd/fast && /usr/bin/make  -f CMakeFiles/cmTC_72efd.dir/build.make CMakeFiles/cmTC_72efd.dir/build
+make[1]: Entering directory '/root/cash2-crypto/jsbuild/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_72efd.dir/CheckFunctionExists.c.o
+/root/cash2-crypto/emsdk/fastcomp/emscripten/emcc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_72efd.dir/CheckFunctionExists.c.o   -c /usr/local/lib/python2.7/dist-packages/cmake/data/share/cmake-3.17/Modules/CheckFunctionExists.c
+Linking C executable cmTC_72efd.js
+/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72efd.dir/link.txt --verbose=1
+/root/cash2-crypto/emsdk/fastcomp/emscripten/emcc  -DCHECK_FUNCTION_EXISTS=pthread_create    @CMakeFiles/cmTC_72efd.dir/objects1.rsp  -o cmTC_72efd.js @CMakeFiles/cmTC_72efd.dir/linklibs.rsp
+make[1]: Leaving directory '/root/cash2-crypto/jsbuild/CMakeFiles/CMakeTmp'
+
+
+

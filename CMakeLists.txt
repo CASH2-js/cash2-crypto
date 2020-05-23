@@ -266,6 +266,7 @@ else()
     -s EXPORT_NAME="'TurtleCoinCrypto'"
     -s POLYFILL_OLD_MATH_FUNCTIONS=1
     -s MODULARIZE=1
+    -s ERROR_ON_UNDEFINED_SYMBOLS=0
     --bind
   )
 

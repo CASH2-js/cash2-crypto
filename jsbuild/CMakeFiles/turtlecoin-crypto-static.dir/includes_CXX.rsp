@@ -1,0 +1,1 @@
+-I/root/cash2-crypto/include -I/root/cash2-crypto/external/argon2/include -I/root/cash2-crypto/external/cxxopts -I/root/cash2-crypto/external/argon2/lib -I/root/cash2-crypto/external/argon2/lib/blake2 

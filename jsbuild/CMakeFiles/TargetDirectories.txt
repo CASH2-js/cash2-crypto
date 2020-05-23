@@ -1,0 +1,10 @@
+/root/cash2-crypto/jsbuild/CMakeFiles/rebuild_cache.dir
+/root/cash2-crypto/jsbuild/CMakeFiles/edit_cache.dir
+/root/cash2-crypto/jsbuild/CMakeFiles/turtlecoin-crypto.dir
+/root/cash2-crypto/jsbuild/CMakeFiles/turtlecoin-crypto-static.dir
+/root/cash2-crypto/jsbuild/CMakeFiles/crypto.dir
+/root/cash2-crypto/jsbuild/external/CMakeFiles/rebuild_cache.dir
+/root/cash2-crypto/jsbuild/external/CMakeFiles/edit_cache.dir
+/root/cash2-crypto/jsbuild/external/argon2/CMakeFiles/rebuild_cache.dir
+/root/cash2-crypto/jsbuild/external/argon2/CMakeFiles/edit_cache.dir
+/root/cash2-crypto/jsbuild/external/argon2/CMakeFiles/argon2.dir

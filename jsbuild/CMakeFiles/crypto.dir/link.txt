@@ -1,0 +1,1 @@
+/root/cash2-crypto/emsdk/fastcomp/emscripten/emar rc libcrypto.a  @CMakeFiles/crypto.dir/objects1.rsp

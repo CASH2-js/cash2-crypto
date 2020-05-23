@@ -1,0 +1,1 @@
+ libturtlecoin-crypto-static.a libcrypto.a external/argon2/libargon2.a -lpthread 

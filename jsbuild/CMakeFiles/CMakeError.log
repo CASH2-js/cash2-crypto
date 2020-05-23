@@ -1,0 +1,69 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /root/cash2-crypto/jsbuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e878b/fast && /usr/bin/make  -f CMakeFiles/cmTC_e878b.dir/build.make CMakeFiles/cmTC_e878b.dir/build
+make[1]: Entering directory '/root/cash2-crypto/jsbuild/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e878b.dir/src.c.o
+/root/cash2-crypto/emsdk/fastcomp/emscripten/emcc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_e878b.dir/src.c.o   -c /root/cash2-crypto/jsbuild/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e878b.js
+/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e878b.dir/link.txt --verbose=1
+/root/cash2-crypto/emsdk/fastcomp/emscripten/emcc  -DCMAKE_HAVE_LIBC_PTHREAD    @CMakeFiles/cmTC_e878b.dir/objects1.rsp  -o cmTC_e878b.js 
+cache:INFO: generating system library: libcompiler_rt.bc... (this will be cached in "/root/.emscripten_cache/asmjs/libcompiler_rt.bc" for subsequent builds)
+cache:INFO:  - ok
+cache:INFO: generating system library: libc-wasm.bc... (this will be cached in "/root/.emscripten_cache/asmjs/libc-wasm.bc" for subsequent builds)
+cache:INFO:  - ok
+cache:INFO: generating system library: libdlmalloc.bc... (this will be cached in "/root/.emscripten_cache/asmjs/libdlmalloc.bc" for subsequent builds)
+cache:INFO:  - ok
+cache:INFO: generating system library: libpthreads_stub.bc... (this will be cached in "/root/.emscripten_cache/asmjs/libpthreads_stub.bc" for subsequent builds)
+cache:INFO:  - ok
+error: undefined symbol: pthread_atfork
+warning: To disable errors for undefined symbols use `-s ERROR_ON_UNDEFINED_SYMBOLS=0`
+Error: Aborting compilation due to previous errors
+shared:ERROR: '/root/cash2-crypto/emsdk/node/8.9.1_64bit/bin/node /root/cash2-crypto/emsdk/fastcomp/emscripten/src/compiler.js /tmp/tmpXIXoOx.txt /root/cash2-crypto/emsdk/fastcomp/emscripten/src/library_pthread_stub.js' failed (1)
+CMakeFiles/cmTC_e878b.dir/build.make:107: recipe for target 'cmTC_e878b.js' failed
+make[1]: *** [cmTC_e878b.js] Error 1
+make[1]: Leaving directory '/root/cash2-crypto/jsbuild/CMakeFiles/CMakeTmp'
+Makefile:141: recipe for target 'cmTC_e878b/fast' failed
+make: *** [cmTC_e878b/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /root/cash2-crypto/jsbuild/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5d2f3/fast && /usr/bin/make  -f CMakeFiles/cmTC_5d2f3.dir/build.make CMakeFiles/cmTC_5d2f3.dir/build
+make[1]: Entering directory '/root/cash2-crypto/jsbuild/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5d2f3.dir/CheckFunctionExists.c.o
+/root/cash2-crypto/emsdk/fastcomp/emscripten/emcc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_5d2f3.dir/CheckFunctionExists.c.o   -c /usr/local/lib/python2.7/dist-packages/cmake/data/share/cmake-3.17/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5d2f3.js
+/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d2f3.dir/link.txt --verbose=1
+/root/cash2-crypto/emsdk/fastcomp/emscripten/emcc  -DCHECK_FUNCTION_EXISTS=pthread_create    @CMakeFiles/cmTC_5d2f3.dir/objects1.rsp  -o cmTC_5d2f3.js @CMakeFiles/cmTC_5d2f3.dir/linklibs.rsp
+shared:ERROR: emcc: cannot find library "pthreads" (`-s ERROR_ON_MISSING_LIBRARIES=0` to disable this error)
+CMakeFiles/cmTC_5d2f3.dir/build.make:108: recipe for target 'cmTC_5d2f3.js' failed
+make[1]: *** [cmTC_5d2f3.js] Error 1
+make[1]: Leaving directory '/root/cash2-crypto/jsbuild/CMakeFiles/CMakeTmp'
+Makefile:141: recipe for target 'cmTC_5d2f3/fast' failed
+make: *** [cmTC_5d2f3/fast] Error 2
+
+
+

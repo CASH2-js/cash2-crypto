@@ -1,0 +1,1 @@
+/root/cash2-crypto/emsdk/fastcomp/emscripten/emar rc libargon2.a  @CMakeFiles/argon2.dir/objects1.rsp
